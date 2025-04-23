@@ -176,5 +176,8 @@ def actualizar_grafico_empacar(onepiece_seleccionados, proceso_seleccionados, fe
 
     return fig
 
+    
+    server = app.server
+
 if __name__ == '__main__':
     app.run(debug=True)
