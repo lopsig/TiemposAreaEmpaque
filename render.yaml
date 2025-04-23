@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: dashboard-empaque
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn tiempos:app.server
+    plan: free
+    region: oregon
